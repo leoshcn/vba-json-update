@@ -18,7 +18,7 @@ Next i
 'remove last , in ticker query
 Symbols = Left(Symbols, Len(Symbols) - 1)
 
-'start api query
+'start api query; remember to load microsoft winhttp service from reference dialog
 
 Dim URL As String
 URL = "https://yfapi.net/v6/finance/quote?symbols=" & Symbols 'replace this when needed
